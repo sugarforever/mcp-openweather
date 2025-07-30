@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-openweather"
+version = "1.0.0"
+description = "Weather Forecast MCP Server Powered by OpenWeatherMap"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "requests>=2.32.3",
+]
+
+[project.scripts]
+mcp-openweather = "mcp_openweather:main"
